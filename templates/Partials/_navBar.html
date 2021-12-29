@@ -1,0 +1,66 @@
+{% load static %}
+ <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+    <span class="mainhero"> A-MEN</span>
+    <span class="mainhero1">TECHNOLOGY</span>
+      
+      
+      <a href="index.html" class="btn-get-started scrollto" style="
+        letter-spacing: 5px;
+        font-size: 15px;
+        color: white;
+        {% comment %} text-shadow: 0px 1px 0px #c7c8ca, 0px 2px 0px #b1b3b6, 0px 3px 0px #9d9fa2, 0px 4px 0px #8a8c8e, 0px 5px 0px #77787b, 0px 6px 0px #636466, 0px 7px 0px #4d4d4f, 0px 8px 7px #001135;
+        filter: drop-shadow(2px 2px 20px #661a05);
+       {% endcomment %}
+      /*Responsive*/
+      @media (max-width: 425px) {
+        h1{font-size:300%;}
+      "> <span id="tx"></span>
+        <h3 id="tx"></h3>
+        <p id="title"></p>
+
+
+        <script>
+          title.innerHTML = "";
+          // For time 
+
+          function time() {
+            var d = new Date();
+            document.getElementById("tx").innerHTML = d.toLocaleTimeString();
+          }
+          setInterval(time, 1000);
+        </script>
+      </a>
+
+
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="{% url 'index' %}"><img src="static/img/2logo.png" alt="" class="img-fluid">     A-MEN TECH</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      {% comment %} <a href="{% url 'index' %}" class="logo"><img src="static/img/amenTech.png" alt="" class="img-fluid"></a> {% endcomment %}
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#whatwedo">What we do</a></li>
+          <li><a href="{% url 'potfolio' %}">Portfolio</a></li>
+          <li><a href="{% url 'academy' %}">Academy</a></li>
+          <li><a href="{% url 'kodeeTrybee' %}">KodeeTrybee</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+      <div class="header-social-links">
+        <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+        <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+        <a href="#" class="whatsapp"><i class="icofont-whatsapp"></i></a>
+        
+      </div>
+      </div>
+      </header><!-- End Header -->
